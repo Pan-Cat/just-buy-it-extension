@@ -3,7 +3,7 @@
    "minimum_chrome_version": "41",
    "name": "Just Buy It",
    "description": "就讓美好的購物揭開你生活的新頁",
-   "version": "1.0.0",
+   "version": "1.0.1",
    "homepage_url": "https://just-buy-it",
    "icons": {
       "128": "assets/img/icon-128.png",
@@ -14,10 +14,7 @@
    "chrome_url_overrides" : {
       "newtab": "newtab.html"
    },
-   "permissions": [
-        "https://spreadsheets.google.com/*",
-        "https://www.googletagmanager.com/*"
-   ],
+   "permissions": [],
    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com 'unsafe-eval' https://spreadsheets.google.com/; object-src 'self'",
    "web_accessible_resources": [ ]
 }
