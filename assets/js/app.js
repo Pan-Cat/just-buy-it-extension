@@ -12,6 +12,16 @@ alt=json                                                                        
 alt=json-in-script&callback={CALLBACK}                                                  return data to callback function
  */
 
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-111565302-2']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = 'https://ssl.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
 const SHEET_ID = '1OYdT891rY4eH1RCj918OuZyvuJHEo_Ofr3eKA55E13c';
 const GRID_ID = 'od6';
 
@@ -31,3 +41,4 @@ $(document).ready(function() {
     s.setAttribute( 'src', DATA_URL )
     document.body.appendChild( s )
 });
+
